@@ -8,12 +8,13 @@
 body{
     margin: 0px;
     background: #000000;
+    
 }
 
 .App{
     position: relative;
     width: 1920px;
-    height: 6727px;  
+    height: 5500px; 
 }
 
 .elipse1{
@@ -607,7 +608,7 @@ color: #FFFFFF;
     left: 821.94px;
     top: 745px;
 
-    background-image: url('lehaRoadmap.png');
+    background-image: url('imgs/lehaRoadmap.png');
 }
 
 .katya-roadmap{
@@ -619,7 +620,7 @@ color: #FFFFFF;
     z-index: 999;
 
     
-    background-image: url('katyaRoadmap.png');
+    background-image: url('imgs/katyaRoadmap.png');
 }
 
 .vanya-roadmap{
@@ -630,7 +631,7 @@ color: #FFFFFF;
     left: 638.94px;
     top: -97px;
 
-    background-image: url('vanyaRoadmap.png');
+    background-image: url('imgs/vanyaRoadmap.png');
 }
 
 .pablo-roadmap{
@@ -639,7 +640,7 @@ color: #FFFFFF;
     height: 780px;
     top: -150px;
     left: 900px;
-    background-image: url('pabloRoadmap.png');
+    background-image: url('imgs/pabloRoadmap.png');
 }
 
 
@@ -983,3 +984,339 @@ color: #919191;
 
 
 /* roadmap-end */
+
+
+
+
+
+.Join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 74px;
+    
+    position: absolute;
+    width: 1854.62px;
+    height: 1287.44px;
+    left: 60px;
+    top: 4800px;
+}
+
+
+.joinOurteam{
+    width: 405px;
+    height: 119px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 185.99%;
+    /* identical to box height, or 119px */
+    
+    
+    color: #FFFFFF;
+}
+
+.branding{
+    width: 584.5px;
+    height: 90px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 185.99%;
+    /* or 30px */
+    
+    text-align: center;
+    
+    color: #919191;
+}
+
+
+/* Footer */
+
+.Footer{
+    position: absolute;
+    width: 1920px;
+    height: 355px;
+    left: 0px;
+    top: 5300px;
+}
+
+.since{
+    position: absolute;
+    left: 12.5%;
+    right: 70.62%;
+    top: 83.1%;
+    bottom: 11.27%;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    
+    
+    color: #E1E9F0;
+}
+
+.footer1{
+    position: absolute;
+    left: 12.5%;
+    right: 69.24%;
+    top: 8.45%;
+    bottom: 8.45%;
+}
+
+.footerLogo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    top: 30px;
+}
+
+.supp{
+    position: absolute;
+    width: 53px;
+    height: 20px;
+    left: 0px;
+    bottom: 42px;
+    
+    /* Text/Small text */
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+    
+    
+    color: #FFFFFF;
+    
+    
+}
+
+
+.term{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    left: 83px;
+    bottom: 42px;
+    
+    /* Text/Small text */
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+    
+    
+    color: #FFFFFF;
+}
+
+.licence{
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    left: 213px;
+    bottom: 42px;
+    
+    /* Text/Small text */
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+    
+    
+    color: #FFFFFF;
+}
+
+
+.footer2{
+    position: absolute;
+    left: 35.42%;
+    right: 42.22%;
+    top: 8.73%;
+    bottom: 8.73%;
+}
+
+.divider{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1px;
+    left: 0px;
+    top: 0%;
+    bottom: 0%;
+    
+    opacity: 0.35;
+    border: 1px solid #8298AB;
+}
+
+.firstLink{
+    position: absolute;
+    height: 25px;
+    left: 9.32%;
+    right: 39.44%;
+    top: 29px;
+    
+    /* Text/Medium text */
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    /* identical to box height, or 147% */
+    
+    
+    color: #E1E9F0;
+}
+
+
+.secondLink{
+    position: absolute;
+    height: 25px;
+    left: 9.32%;
+    right: 39.44%;
+    top: 64px;
+    
+    /* Text/Medium text */
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    /* identical to box height, or 147% */
+    
+    
+    color: #E1E9F0;
+}
+
+
+.footerfacebook{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 30px;
+    bottom: 39px;
+}
+
+.footerInstagram{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 112px;
+    bottom: 39px;
+}
+
+.footerTwitter{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 70px;
+    bottom: 39px;
+}
+
+
+
+
+.footer3{
+    position: absolute;
+    left: 59.86%;
+    right: 12.5%;
+    top: 8.45%;
+    bottom: 8.45%;
+}
+
+.impression{
+    position: absolute;
+    height: 25px;
+    left: 0%;
+    right: 7.54%;
+    top: 30px;
+    
+    /* Text/Medium text */
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    /* identical to box height, or 147% */
+    
+    
+    color: #E1E9F0;
+}
+
+.idb{
+    position: absolute;
+    height: 17px;
+    left: 1.26%;
+    right: 6.28%;
+    top: 265px;
+    
+    /* Text/Medium text */
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    /* or 147% */
+    
+    
+    color: #E1E9F0;
+}
+
+
+.footer-form3{
+    position: absolute;
+    height: 45px;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+}
+
+.divider2{
+    left: 325px;
+}
+
+
+.footer-rect1{
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 10.42%;
+    right: 10.42%;
+    top: 8.45%;
+    bottom: 8.45%;
+    
+    opacity: 0.35;
+    /* Light grey */
+    
+    border: 1px solid #8298AB;
+}
+
+.footer-rect2{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    background: #070707;
+}
