@@ -7,6 +7,7 @@ import About from './components/about';
 import Roadmap from './components/Roadmap';
 import Join from './components/Join';
 import Footer from './components/Footer';
+import Tape from './components/tape';
 import "./styles.css"
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <About/>
       <Roadmap/>
       <Join/>
+      <Tape/>
       <Footer/>
       <img className='elipse1' src="images/elipse1.svg"/>
       <img className='elipse2' src="images/elipse2.svg"/>
