@@ -17,6 +17,12 @@ body{
     height: 6727px;
 }
 
+.main{
+    width: 1920px;
+    height: 6727px;
+}
+
+
 .elipse1{
 position: absolute;
 width: 68.65px;
@@ -1348,8 +1354,6 @@ color: #919191;
 .tape1{
     width: 1536.42px;
     height: 511px;
-
-
     
 }
 
@@ -1620,7 +1624,7 @@ color: #919191;
 
 
 .tape2{
-    width: 1900px;
+    width: 1700px;
     height: 548.44px;
     position: absolute;
     top: 500px;
@@ -1848,7 +1852,7 @@ transform: rotate(-7.03deg);
     position: absolute;
     width: 270px;
     height: 325.81px;
-    left: 2328.6px;
+    left: 1228.6px;
     top: 70.47px;
 }
 
@@ -1944,4 +1948,310 @@ transform: rotate(-7.03deg);
     background: #0C0C0C;
     border-radius: 15px;
     transform: rotate(-7.03deg);
+}
+
+
+
+/* catalog */
+.Catalog{
+    position: relative;
+    width: 1920px;
+    height: 6727px;
+    
+    background: #000000;
+}
+.search-form{
+    display: inline-flex;
+    
+}
+
+.search-input{
+    position: absolute;
+    width: 879px;
+    height: 38px;
+    left: 144px;
+    top: 161px;
+    padding: 0 20px;
+    font-size: 30px;
+
+    
+    background: #D9D9D9;
+    border-radius: 40px;
+
+    border: none;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 11px 26px;
+    gap: 21px;
+    
+    position: absolute;
+    width: 121px;
+    height: 46px;
+    left: 1400px;
+    top: 130px;
+    
+    background: #151313;
+    border-radius: 8px;
+}
+
+.filters-text{
+    width: 69px;
+    height: 24px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 119.3%;
+    /* identical to box height, or 24px */
+    
+    
+    color: #FFFFFF;
+}
+
+
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+
+    position: absolute;
+    width: 315px;
+    height: 309px;
+    left: 1400px;
+    top: 199px;
+    background: #D9D9D9;
+    border-radius: 35px;
+}
+
+
+.size{
+    width: 70px;
+    height: 24px;
+
+    font-family: 'Turret Road';
+    font-style:normal;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+}
+
+.sizes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 127px;
+    height: 30px;
+
+    font-family: 'Turret Road';
+    font-style:normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.s-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px 2px 2px 2px;
+    width: 30px;
+    height: 30px; 
+}
+
+.s-name:hover{
+    background: #e4dff5;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+.size-in-letters-checked{
+    background: #fff;
+    border-radius: 100px;
+    border: 1px #000000 solid;
+    
+}
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    height: 150px;
+
+    margin: 10px;
+    padding: 0 20px;
+}
+
+.checkbox-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 150px;
+    height: 24px;
+}
+
+.checkbox{
+    background: #F6F8F9;
+    /* Mid Gray / Mid Gray 5 */
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid #B0BABF;
+    border-radius: 4px;
+
+}
+
+.checkbox-label{
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+.Item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    height: 330px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #0C0C0C;
+  }
+  
+  .item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .item-text {
+    padding: 10px;
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+    
+  }
+  
+  .Item:hover {
+    background-color: #111;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    cursor: pointer;
+  }
+  
+  .Item:hover .item-text {
+    color: #F5F5F5;
+  }
+
+
+
+
+.cat-gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 70px;
+    
+    position: absolute;
+    width: 1191px;
+    height: 5568.15px;
+    left: 170px;
+    top: 302px;
+}
+
+
+
+
+
+.cat-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 70px;
+    
+    width: 1191px;
+    height: 1057.63px;
+}
+
+
+.cat-main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    
+    width: 701px;
+    height: 167px;
+}
+
+.cat-main-text{
+    width: 300px;
+    height: 119px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 185.99%;
+    /* identical to box height, or 119px */
+    
+    
+    color: #FFFFFF;
+}
+
+
+.cat-main-bottom-text{
+    width: 701px;
+    height: 46px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 185.99%;
+    /* or 46px */
+    
+    
+    color: #919191;
+}
+
+.cat-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 56px;
+    
+    width: 1191px;
+    height: 820.63px;
+}
+
+.cat-main-container1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 37px;
+    
+    width: 1191px;
+    height: 325.81px;
 }

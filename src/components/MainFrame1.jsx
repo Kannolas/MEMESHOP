@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function MainFrame1(){
     return(
@@ -15,12 +16,12 @@ function MainFrame1(){
                     <div className="mainFrame-underlogo">
                     An international brand of Asian clothing with its production in Moscow. Comfort, aesthetics, the best materials, time-tested cut and custom prints.
                     </div>
-                    <a className="mainFrame-order-link" href="#"><div className="order-button-container mainFrame-order-button-container">
+                    <Link className="mainFrame-order-link" to={"/"}><div className="order-button-container mainFrame-order-button-container">
                         <div className="order-button mainFrame-order-button">
                             Order now
                         </div>
                     </div>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

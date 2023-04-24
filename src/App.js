@@ -1,29 +1,17 @@
 import React from 'react';
-import Nav from './components/nav';
-import MainFrame1 from './components/MainFrame1';
-import Picture from './components/picture';
-import Heroes from './components/Heroes';
-import About from './components/about';
-import Roadmap from './components/Roadmap';
-import Join from './components/Join';
-import Footer from './components/Footer';
-import Tape from './components/tape';
-import "./styles.css"
+import Main from './pages/Main';
+import Catalog from './pages/Catalog'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 function App() {
   return (
     <div className="App">
-      <Nav/>
-      <MainFrame1/>
-      <Picture/>
-      <Heroes/> 
-      <About/>
-      <Roadmap/>
-      <Join/>
-      <Tape/>
-      <Footer/>
-      <img className='elipse1' src="images/elipse1.svg"/>
-      <img className='elipse2' src="images/elipse2.svg"/>
-      <img className='elipse3' src="images/elipse3.svg"/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' index element={<Main/>}/>
+          <Route path='/catalog' element={<Catalog/>}/>
+        </Routes>
+      </BrowserRouter>  
     </div>
   );
 }
