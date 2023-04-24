@@ -119,8 +119,71 @@ function Catalog(){
                             <Item name={"Sreda"} itemImage={sreda} ></Item>
                         </div>
                     </div>
-
                 </div>
+
+                <div className="skirts cat-container">
+                    <div className="cat-main">
+                        <div className="cat-main-text">SKIRTS</div>
+                        <div className="cat-main-bottom-text">Pants are made of cotton with love for your dad</div>
+                    </div>
+                    <div className="cat-main-container">
+                        <div className="cat-main-container1">
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                        </div>
+                        <div className="cat-main-container1">
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="jackets cat-container">
+                    <div className="cat-main">
+                        <div className="cat-main-text">JACKETS</div>
+                        <div className="cat-main-bottom-text">Pants are made of cotton with love for your family</div>
+                    </div>
+                    <div className="cat-main-container">
+                        <div className="cat-main-container1">
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                        </div>
+                        <div className="cat-main-container1">
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="barhatnie-tyagi cat-container">
+                    <div className="cat-main">
+                        <div className="cat-main-text">BARHATNIE TYAGI</div>
+                        <div className="cat-main-bottom-text">Pants are made of cotton with love for your family</div>
+                    </div>
+                    <div className="cat-main-container">
+                        <div className="cat-main-container1">
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                        </div>
+                        <div className="cat-main-container1">
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                            <Item name={"Sreda"} itemImage={sreda} ></Item>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             {/* <Item name={"Sreda"} itemImage={sreda} ></Item> */}
