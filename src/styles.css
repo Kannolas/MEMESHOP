@@ -60,6 +60,7 @@ z-index: 100;
 position: fixed;
 width: 1920px;
 height: 70px;
+margin: 0 0 0 0;
 }
 
 .nav-links{
@@ -1328,630 +1329,213 @@ color: #919191;
 }
 
 
-
-
-
-
-
-
-
-/* Tape */
-
-.Tape{
+/* slider */
+.Slider{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
-
-    position: relative;
-    top: 5200px;
-    left: 200px;
-
-    width: 1700px;
-    height: 1202.44px;
-}
-
-.tape1{
-    width: 1536.42px;
-    height: 511px;
+    gap: 74px;
     
+    position: absolute;
+    width: 1854.62px;
+    height: 1287.44px;
+    left: 0px;
+    top: 5200.68px;
 }
-
+.slider-cont{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1500px;
+    height: 600px;
+    overflow: hidden;
+}
 
 .item1{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 0px;
-    top: 187.63px;
+    margin-top: 80px;
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .item2{
+    margin-top: 57px;
     
-    
-}
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .item3{
+    margin-top: 30px;
+  
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  .item4{
+    margin-top: 3px;
+  
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+  .item5{
+    margin-top: -24px;
+  
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+  }
+  .item6{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+  }
+  
+  .item7{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 6;
+    flex-grow: 0;
+  }
+  .item8{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 7;
+    flex-grow: 0;
+  }
+  .item9{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 8;
+    flex-grow: 0;
+  }
 
-
-.item1-text{
-    position: absolute;
-    width: 66px;
-    height: 37px;
-    left: 135.67px;
-    top: 299.98px;
-    
-    font-family: 'Turret Road';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 185.99%;
-    /* or 37px */
-    
+  .item10{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 9;
+    flex-grow: 0;
+  }
+  
+  
+  .slider-item{
+    margin-left: 50px;
     transform: rotate(-7.03deg);
-    color: #FFFFFF;
-}
+  }
+  
+  .butt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 60px;
+    background-color: #FFFFFF;
+    cursor: pointer;
 
-.item1-img{
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    left: 0px;
-    top: 33.03px;
-    background-repeat: no-repeat;
-    background: url(imgs/item1.png);
-    border-radius: 15px;
-}
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    box-shadow: #2196f3;
+  }
 
+  .slider-cont1{
+    margin-bottom: 200px;
+  }
 
-.item1-rect{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 0px;
-    top: 33.03px;
+  .arrow{
+    width: 100px;
+    height: 50px;
+  }
+
+  .item-1-1{
+    margin-top: 80px;
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  
+  .item-1-2{
+    margin-top: 57px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .item-1-3{
+    margin-top: 30px;
+  
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  .item-1-4{
+    margin-top: 3px;
+  
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+  .item-1-5{
+    margin-top: -24px;
+  
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+  }
+  .item-1-6{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+  }
+  
+  .item-1-7{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 6;
+    flex-grow: 0;
+  }
+  .item-1-8{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 7;
+    flex-grow: 0;
+  }
+  .item-1-9{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 8;
+    flex-grow: 0;
+  }
+
+  .item-1-10{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 9;
+    flex-grow: 0;
+  }
+
+  .slider-item1{
+    margin-left: 50px;
     transform: rotate(-7.03deg);
-    background: #0C0C0C;
-    border-radius: 15px;
-}
-
-
-.item2{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 304.33px;
-    top: 150.13px;
-}
-
-
-.item2-text{
-    position: absolute;
-    width: 61px;
-    height: 37px;
-    left: 138.15px;
-    top: 299.67px;
-    
-    font-family: 'Turret Road';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 185.99%;
-    /* or 37px */
-    
-    
-    color: #FFFFFF;
-    
-    transform: rotate(-7.03deg);
-}
-
-.item2-img{
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    left: 0px;
-    top: 33.03px;
-
-    background: url(imgs/item2.png);
-   
-}
-
-.item2-rect{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 0px;
-    top: 33.03px;
-    
-    background: #0C0C0C;
-    border-radius: 15px;
-    transform: rotate(-7.03deg);
-}
-
-
-.item3{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 608.67px;
-    top: 112.62px;
-}
-
-.item3-text{
-    position: absolute;
-    width: 73px;
-    height: 37px;
-    left: 132.2px;
-    top: 300.41px;
-    
-    font-family: 'Turret Road';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 185.99%;
-    /* or 37px */
-    
-    
-    color: #FFFFFF;
-    
-    transform: rotate(-7.03deg);
-}
-
-.item3-img{
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    left: 0px;
-    top: 33.03px;
-
-    background: url(imgs/item3.png);
-    border-radius: 15px;
-}
-
-.item3-rect{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 0px;
-    top: 33.03px;
-    
-    background: #0C0C0C;
-    border-radius: 15px;
-    transform: rotate(-7.03deg);
-}
-
-
-.item4{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 913px;
-    top: 75.11px;
-}
-
-.item4-text{
-    position: absolute;
-    width: 56px;
-    height: 37px;
-    left: 140.63px;
-    top: 299.37px;
-    
-    font-family: 'Turret Road';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 185.99%;
-    /* or 37px */
-    
-    
-    color: #FFFFFF;
-    
-    transform: rotate(-7.03deg);
-}
-
-.item4-img{
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    left: 0px;
-    top: 33.03px;
-
-    border-radius: 15px;
-    background: url(imgs/item4.png);
-}
-
-.item4-rect{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 0px;
-    top: 33.03px;
-    
-    background: #0C0C0C;
-    border-radius: 15px;
-    transform: rotate(-7.03deg);
-}
-
-
-.item5{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 1228.6px;
-    top: 33.03px;
-}
-
-.item5-text{
-    position: absolute;
-    width: 61px;
-    height: 37px;
-    left: 138.15px;
-    top: 299.67px;
-    
-    font-family: 'Turret Road';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 185.99%;
-    /* or 37px */
-    
-    
-    color: #FFFFFF;
-    
-    transform: rotate(-7.03deg);
-
-}
-
-.item5-img{
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    left: 0px;
-    top: 33.03px;
-
-    border-radius: 15px;
-    background: url(imgs/item5.png);
-}
-
-.item5-rect{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 0px;
-    top: 33.03px;
-    
-    background: #0C0C0C;
-    border-radius: 15px;
-    transform: rotate(-7.03deg);
-}
-
-
-
-
-.tape2{
-    width: 1700px;
-    height: 548.44px;
-    position: absolute;
-    top: 500px;
-    margin: -100px 0px;
-}
-
-.item2-1{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 0px;
-    top: 225.07px;
-
-}
-
-.item2-1-text{
-    position: absolute;
-    width: 66px;
-    height: 37px;
-    left: 135.67px;
-    top: 299.98px;
-    
-    font-family: 'Turret Road';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 185.99%;
-    /* or 37px */
-    
-    
-    color: #FFFFFF;
-    
-    transform: rotate(-7.03deg);
-}
-
-.item2-1-img{
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    left: 0px;
-    top: 33.02px;
-
-    background: url(imgs/item2-1.png);
-    border-radius: 15px;
-
-}
-
-.item2-1-rect{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 0px;
-    top: 33.02px;
-    
-    background: #0C0C0C;
-    border-radius: 15px;
-    transform: rotate(-7.03deg);
-}
-
-
-.item2-2{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 304.33px;
-    top: 187.57px;
-}
-
-.item2-2-text{
-    position: absolute;
-    width: 61px;
-    height: 37px;
-    left: 138.15px;
-    top: 299.67px;
-    
-    font-family: 'Turret Road';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 185.99%;
-    /* or 37px */
-    
-    
-    color: #FFFFFF;
-    
-    transform: rotate(-7.03deg);
-}
-
-
-.item2-2-img{
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    left: 0px;
-    top: 33.02px;
-
-    background: url(imgs/item2-2.png);
-    border-radius: 15px;
-}
-
-.item2-2-rect{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 0px;
-    top: 33.02px;
-    
-    background: #0C0C0C;
-    border-radius: 15px;
-    transform: rotate(-7.03deg);
-}
-
-.item2-3{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 608.67px;
-    top: 150.06px;
-    
-}
-
-.item2-3-text{
-    position: absolute;
-    width: 73px;
-    height: 37px;
-    left: 132.2px;
-    top: 300.41px;
-    
-    font-family: 'Turret Road';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 185.99%;
-    /* or 37px */
-    
-    
-    color: #FFFFFF;
-    
-    transform: rotate(-7.03deg);
-}
-
-.item2-3-img{
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    left: 0px;
-    top: 33.02px;
-    
-    background: url(imgs/item2-3.png);
-    border-radius: 15px;
-    
-}
-
-.item2-3-rect{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 0px;
-    top: 33.02px;
-    
-    background: #0C0C0C;
-    border-radius: 15px;
-    transform: rotate(-7.03deg);
-}
-
-
-.item2-4{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 913px;
-    top: 112.56px;
-}
-
-
-.item2-4-text{
-/* JAMIE */
-
-
-position: absolute;
-width: 56px;
-height: 37px;
-left: 140.63px;
-top: 299.37px;
-
-font-family: 'Turret Road';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 185.99%;
-/* or 37px */
-
-
-color: #FFFFFF;
-
-transform: rotate(-7.03deg);
-}
-
-
-.item2-4-img{
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    left: 0px;
-    top: 33.02px;
-    
-    background: url(imgs/item2-4.png);
-    border-radius: 15px;
-}
-
-.item2-4-rect{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 0px;
-    top: 33.02px;
-    
-    background: #0C0C0C;
-    border-radius: 15px;
-    transform: rotate(-7.03deg);
-}
-
-
-.item2-5{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 1228.6px;
-    top: 70.47px;
-}
-
-.item-2-5-text{
-    position: absolute;
-    width: 61px;
-    height: 37px;
-    left: 138.15px;
-    top: 299.67px;
-    
-    font-family: 'Turret Road';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 185.99%;
-    /* or 37px */
-    
-    
-    color: #FFFFFF;
-    
-    transform: rotate(-7.03deg);
-}
-
-.item-2-5-img{
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    left: 0px;
-    top: 33.02px;
-    
-    background: url(imgs/item2-5.png);
-    border-radius: 15px;
-}
-
-.item-2-5-rect{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 0px;
-    top: 33.02px;
-    
-    background: #0C0C0C;
-    border-radius: 15px;
-    transform: rotate(-7.03deg);
-}
-
-.item-2-6{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 1546.79px;
-    top: 33.02px;
-}
-
-.item-2-6-text{
-    position: absolute;
-    width: 73px;
-    height: 37px;
-    left: 132.2px;
-    top: 300.41px;
-    
-    font-family: 'Turret Road';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 185.99%;
-    /* or 37px */
-    
-    
-    color: #FFFFFF;
-    
-    transform: rotate(-7.03deg);
-}
-
-.item-2-6-img{
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    left: 0px;
-    top: 33.02px;
-
-    border-radius: 15px;
-    background: url(imgs/item2-6.png);
-}
-
-.item-2-6-rect{
-    position: absolute;
-    width: 270px;
-    height: 325.81px;
-    left: 0px;
-    top: 33.02px;
-    
-    background: #0C0C0C;
-    border-radius: 15px;
-    transform: rotate(-7.03deg);
-}
-
-
-
+  }
 /* catalog */
 .Catalog{
     position: relative;

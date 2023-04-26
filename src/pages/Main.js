@@ -7,18 +7,18 @@ import About from '../components/about';
 import Roadmap from '../components/Roadmap';
 import Join from '../components/Join';
 import Footer from '../components/Footer';
-import Tape from "../components/tape";
+import Slider from "../components/slider";
 function Main(){
     return(
         <div className="main">
-            <Nav/>
+            <Nav />
             <MainFrame1/>
             <Picture/>
             <Heroes/> 
             <About/>
             <Roadmap/>
             <Join/>
-            <Tape/>
+            <Slider/>
             <Footer/>
             <img className='elipse1' src="images/elipse1.svg"/>
             <img className='elipse3' src="images/elipse3.svg"/>
