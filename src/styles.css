@@ -10,16 +10,24 @@ body{
     background: #000000;
     
 }
+a{
+    text-decoration: none;
+}
 
 .App{
     position: relative;
-    width: 1920px;
-    height: 6727px;
 }
 
 .main{
     width: 1920px;
     height: 6727px;
+}
+.Catalog{
+    position: relative;
+    width: 1920px;
+    height: 6200px;
+    
+    background: #000000;
 }
 
 
@@ -53,14 +61,14 @@ transform: rotate(-54.75deg);
 /* nav */
 .Nav{
     background-color: #000000;
-display: flex;
-flex-direction: column;
-align-items: center;
-z-index: 100;
-position: fixed;
-width: 1920px;
-height: 70px;
-margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    width: 1920px;
+    height: 70px;
+    margin: 0 0 0 0;
 }
 
 .nav-links{
@@ -1445,7 +1453,7 @@ color: #919191;
     flex: none;
     order: 0;
     flex-grow: 0;
-    box-shadow: #2196f3;
+    
   }
 
   .slider-cont1{
@@ -1537,13 +1545,7 @@ color: #919191;
     transform: rotate(-7.03deg);
   }
 /* catalog */
-.Catalog{
-    position: relative;
-    width: 1920px;
-    height: 6727px;
-    
-    background: #000000;
-}
+
 .search-form{
     display: inline-flex;
     
@@ -1737,6 +1739,9 @@ color: #919191;
     background-color: #111;
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
     cursor: pointer;
+
+    transform: scale(1.05);
+    transition: 0.4s;
   }
   
   .Item:hover .item-text {
@@ -1752,10 +1757,9 @@ color: #919191;
     align-items: flex-start;
     padding: 0px;
     gap: 70px;
-    
     position: absolute;
+    height: 5568px;
     width: 1191px;
-    height: 5568.15px;
     left: 170px;
     top: 302px;
 }
@@ -1838,4 +1842,52 @@ color: #919191;
     
     width: 1191px;
     height: 325.81px;
+}
+
+
+.Not-Found{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 1920px;
+    height: 100vh;
+}
+
+
+.notFound-404{
+    width: 100px;
+    height: 46px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+
+    margin-top: 100px;
+}
+
+.notFound-text{
+    width: 300px;
+    height: 46px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.button-404{
+    width: 300px;
+    height: 70px;
+    font-size: 30px;
+}
+
+.hidden{
+    display: none;
 }

@@ -3,13 +3,16 @@ import Footer from "../components/Footer";
 import Nav from "../components/nav";
 import Item from "../components/Item";
 import sreda from"../imgs/sreda.png";
+import { useState, useEffect} from "react";
 function catalogLoaded(){
-    let a = [document.querySelector(".about"), document.querySelector(".roadmap"), document.querySelector(".minting"), document.querySelector(".catalog")]
+    let a = document.querySelectorAll(".nav-button")
     a.forEach(element => {
             element.classList.remove("checked");
     })
-    a[3].classList.add('checked')
+    a[1].classList.add('checked')
 }
+
+
 
 function SizeInLettersClicked(e){
     e.target.classList.toggle("size-in-letters-checked")
@@ -20,10 +23,94 @@ function SizeInNumbersClicked(e){
 }
 
 
+function TishsChange(e){
+    const elems = document.querySelectorAll(".cat-container");
+    
+}
+function PantsChange(e){
+    
+}
+function SkirtsChange(e){
+    
+}
+function JacketsChange(e){
+    
+}
+function TyagiChange(e){
+    
+}
+
+
+
+
 function Catalog(){
+    const [isTishsChecked, setIsTishsChecked]=useState("true");
+    const [currentHeight, setCurrentHeight] = useState(5568);
+    const handleTishsBoxChange = ()=>{
+        if(isTishsChecked)
+            setCurrentHeight(currentHeight - 1100);
+        else
+            setCurrentHeight(currentHeight + 1100);
+        setIsTishsChecked(!isTishsChecked);
+        const elem = document.querySelector(".tishs")
+        
+        elem.classList.toggle("hidden")
+    }
+    useEffect(() => {
+        const catalog = document.querySelector(".Catalog")
+        catalog.style.height =`${currentHeight+950}px`
+
+        const gallery = document.querySelector(".cat-gallery");
+        gallery.style.height = `${currentHeight}px`;
+      }, [currentHeight]);
+
+    const [isPantsChecked, setIsPantsChecked]=useState("true");
+    const handlePantsBoxChange = ()=>{
+        if(isPantsChecked)
+            setCurrentHeight(currentHeight - 1100);
+        else
+            setCurrentHeight(currentHeight + 1100);
+        setIsPantsChecked(!isPantsChecked);
+        const elem = document.querySelector(".pants")
+        elem.classList.toggle("hidden")
+        
+    }
+
+    const [isSkirtsChecked, setIsSkirtsChecked]=useState("true");
+    const handleSkirtsBoxChange = ()=>{
+        if(isSkirtsChecked)
+            setCurrentHeight(currentHeight - 1100);
+        else
+            setCurrentHeight(currentHeight + 1100);
+        setIsSkirtsChecked(!isSkirtsChecked);
+        const elem = document.querySelector(".skirts")
+        elem.classList.toggle("hidden")
+    }
+
+    const [isJacketsChecked, setIsJacketsChecked]=useState("true");
+    const handleJacketsBoxChange = ()=>{
+        if(isJacketsChecked)
+            setCurrentHeight(currentHeight - 1100);
+        else
+            setCurrentHeight(currentHeight + 1100);
+        setIsJacketsChecked(!isJacketsChecked);
+        const elem = document.querySelector(".jackets")
+        elem.classList.toggle("hidden")
+    }
+
+    const [isTyagiChecked, setIsTyagiChecked]=useState("true");
+    const handleTyagiBoxChange = ()=>{
+        if(isTyagiChecked)
+            setCurrentHeight(currentHeight - 1100);
+        else
+            setCurrentHeight(currentHeight + 1100);
+        setIsTyagiChecked(!isTyagiChecked);
+        const elem = document.querySelector(".barhatnie-tyagi")
+        elem.classList.toggle("hidden")
+    }
 
     return(
-        <div className="Catalog" onLoad={catalogLoaded}>
+        <div className="Catalog"  onLoad={catalogLoaded}>
             <Nav/>
             <div className="search-form">
                 <input type="text"
@@ -31,6 +118,7 @@ function Catalog(){
                 className="search-input"
                 />
             </div>
+            
 
             <div className="filters"><span className="filters-text">FILTERS</span></div>
 
@@ -52,29 +140,29 @@ function Catalog(){
                 <div className="size">Categories:</div>
                 <div className="checkboxes">
                     <div className="check-tishs checkbox-cont">
-                        <input type="checkbox" className="checkbox-tish checkbox" id="check-1" name="check-1" value={"T-SHIRTS"} />
+                        <input onChange={handleTishsBoxChange} type="checkbox" className="checkbox-tish checkbox" id="check-1" name="check-1" value={"T-SHIRTS"} checked={isTishsChecked}/>
                         <label htmlFor="check-1" className="label-tish checkbox-label">T-SHIRTS</label>
                     </div>
                     <div className="check-pants checkbox-cont">
-                        <input type="checkbox" className="checkbox-pants checkbox" id="check-1" name="check-1" value={"T-SHIRTS"} />
-                        <label htmlFor="check-1" className="label-pants checkbox-label">PANTS</label>
+                        <input onChange={handlePantsBoxChange} type="checkbox" className="checkbox-pants checkbox" id="check-2" name="check-1" value={"PANTS"} checked={isPantsChecked}/>
+                        <label htmlFor="check-2" className="label-pants checkbox-label">PANTS</label>
                     </div>
                     <div className="check-skirts checkbox-cont">
-                        <input type="checkbox" className="checkbox-skirts checkbox" id="check-1" name="check-1" value={"T-SHIRTS"} />
-                        <label htmlFor="check-1" className="label-skirts checkbox-label">SKIRTS</label>
+                        <input onChange={handleSkirtsBoxChange} type="checkbox" className="checkbox-skirts checkbox" id="check-3" name="check-1" value={"SKIRTS"} checked={isSkirtsChecked}/>
+                        <label htmlFor="check-3" className="label-skirts checkbox-label">SKIRTS</label>
                     </div>
                     <div className="check-jackets checkbox-cont">
-                        <input type="checkbox" className="checkbox-jackets checkbox" id="check-1" name="check-1" value={"T-SHIRTS"} />
-                        <label htmlFor="check-1" className="label-jackets checkbox-label">JACKETS</label>
+                        <input onChange={handleJacketsBoxChange} type="checkbox" className="checkbox-jackets checkbox" id="check-4" name="check-1" value={"JACKETS"} checked={isJacketsChecked}/>
+                        <label htmlFor="check-4" className="label-jackets checkbox-label">JACKETS</label>
                     </div>
                     <div className="check-tyagi checkbox-cont">
-                        <input type="checkbox" className="checkbox-tyagi checkbox" id="check-1" name="check-1" value={"T-SHIRTS"} />
-                        <label htmlFor="check-1" className="label-tyagi checkbox-label">BARHATNIE TYAGI</label>
+                        <input onChange={handleTyagiBoxChange} type="checkbox" className="checkbox-tyagi checkbox" id="check-5" name="check-1" value={"TYAGI"} checked={isTyagiChecked}/>
+                        <label htmlFor="check-5" className="label-tyagi checkbox-label">BARHATNIE TYAGI</label>
                     </div>
                 </div>
 
             </div>
-            <div className="cat-gallery">
+            <div className="cat-gallery" >
                 <div className="tishs cat-container">
                     <div className="tishs-main cat-main-">
                         <div className="tishs-main-text cat-main-text">
