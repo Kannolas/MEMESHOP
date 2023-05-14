@@ -1,0 +1,2169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Turret+Road:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Turret+Road:wght@300;400;500;700;800&family=Zen+Dots&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background: #000000;
+    
+}
+a{
+    text-decoration: none;
+}
+
+.App{
+    position: relative;
+}
+
+.main{
+    width: 1920px;
+    height: 6727px;
+}
+.Catalog{
+    position: relative;
+    width: 1920px;
+    height: 6200px;
+    
+    background: #000000;
+}
+
+
+.elipse1{
+position: absolute;
+width: 68.65px;
+height: 61.36px;
+left: 1146.34px;
+top: 1013.13px;
+
+transform: rotate(-54.75deg);
+}
+
+.elipse2{
+    position: absolute;
+    width: 82.19px;
+    height: 73.45px;
+    left: 1375.97px;
+    top: 222.42px;
+    transform: rotate(-16.45deg);
+}
+
+.elipse3{
+    position: absolute;
+    width: 116.91px;
+    height: 104.49px;
+    left: 306.12px;
+    top: 608.52px;
+}
+
+/* nav */
+.Nav{
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    width: 1920px;
+    height: 70px;
+    margin: 0 0 0 0;
+}
+
+.nav-links{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding: 0%;
+width: 1400px;
+height: 48px;
+}
+
+.nav-buttons{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0%;
+width: 600px;
+height: 46px;
+justify-content: space-between;
+}
+
+.nav-button{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width: 106px;
+height: 46px;
+border-radius: 8px;
+text-decoration: none;
+
+background: #151313;
+color: #fff;
+
+font-family: 'Turret Road';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+}
+
+
+.nav-button:hover{
+    color: #255784;
+    background-color: #151313;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0s;
+    border-radius: 12px;
+}
+
+
+.nav-button.checked:hover{
+    background-color: #fff;
+    box-shadow: 0 0 10px #800000, 0 0 40px #800000, 0 0 80px #800000;
+}
+.checked{
+background-color: #fff;
+color:#000000
+}
+
+
+
+.nav-buttons2{
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-between;
+width: 280px;
+height: 48px;
+}
+
+.nav-button1{
+width: 48px;
+height: 48px;
+}
+
+.nav-button1:hover{
+    cursor: pointer;
+}
+
+.nav-line{
+    width: 1920px;
+    height: 0px;
+    
+    border: 1px solid #1C1C1C;
+}
+
+
+.dropDown-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #151313;
+    width: 110px;
+    height: 400px;
+
+    border-radius: 15px;
+    border: #717171 5px solid;
+
+    margin-left: 46%;
+}
+
+.dropDown-account{
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+
+    color: #fff;
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom:#717171 5px solid;
+}
+
+.Log-in{
+    width: 100px;
+    height: 30px;
+
+    color: #fff;
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/* MainFrame1 */
+.MainFrame1{
+display: flex;
+flex-direction: row ;
+align-items: flex-start;
+position: absolute;
+margin-top: 70px;
+width: 1920px;
+height: 350px;
+}
+
+.Main-Frame-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+
+    position: absolute;
+    width: 976px;
+    height: 300px;
+    left: 500px;
+    top: 246px;
+}
+
+.mainFrame-scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 16px;
+    height: 174px;
+}
+
+.mainFrame-Scroll-text{
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 101.3%;
+    
+    width: 117px;
+    height: 16px;
+
+    color: #fff;
+
+    transform: rotate(90deg);
+}
+
+.mainFrame-Scroll-image{
+    width: 33.92px;
+    height: 0px;
+    
+    border: 1px solid #FFFFFF;
+    transform: rotate(-90deg);
+}
+
+
+.mainFrame-data{
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    width: 762px;
+    height: 292px;
+
+}
+
+.mainFrame-logo{
+    width: 762px;
+    height: 89px;
+
+    font-family: 'Zen Dots';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 119.3%;
+
+    text-align: center;
+
+    color: #fff;
+    
+}
+
+
+.mainFrame-underlogo{
+    width: 696px;
+    height: 66px;
+
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 185%;
+    text-align: center;
+    color: #FCFCFC;
+}
+
+.mainFrame-order-link{
+    text-decoration: none;
+}
+
+.order-button-container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 18px 31px;
+    width: 162px;
+    height: 73px;
+
+    border: 1px solid #373737;
+    border-radius: 5px;
+}
+
+.order-button{
+    width: 100px;
+    height: 37px;
+    text-decoration: none;
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 185%;
+
+    color: #fff;
+}
+
+.order-button-container:hover{
+    color: #255784;
+    background-color: #151313;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0s;
+    border-radius: 12px;
+}
+
+
+
+/* picture  */
+.picture{
+    position: absolute;
+    width: 1286.52px;
+    height: 1616.19px;
+    left: 400px;
+    top: 723px;
+}
+
+
+.evgesha{
+    position: absolute;
+    width: 797px;
+    height: 797px;
+    left: 227px;
+    top: -46px;
+}
+
+.vanya{
+    position: absolute;
+    width: 285px;
+    height: 293px;
+    left: 76px;
+    top: 389px;
+}
+
+
+.elipse4{
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 3.06%;
+    right: 4.16%;
+    top: 22.27%;
+    bottom: 3.87%;
+    
+    background: #0A0A0A;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.group1{
+    position: absolute;
+    width: 1286.52px;
+    height: 1286.52px;
+    left: -0.63px;
+    top: 230.99px;
+    
+    opacity: 0.5;
+}
+
+
+
+.Heroes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 280px;
+
+    position: absolute;
+    width: 1920px;
+    height: 400px;
+    left: 0px;
+    top:1302px;
+    background: #000000;
+}
+
+
+.heroes-text{
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 186%;
+    letter-spacing: 1.115em;
+    color:#fff;
+
+    width: 400px;
+    height: 37px;
+}
+
+
+
+.about-rect{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1191.23px;
+    height: 596.81px;
+    left: 0px;
+    top: 118.33px;
+    
+    background: rgba(29, 29, 29, 0.33);
+    border: 1px solid #494949;
+    backdrop-filter: blur(317.5px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 35px;
+}
+
+.about-text-area{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    width: 521.14px;
+    height: 298px;
+    left: 0px;
+    top: 198.14px;
+}
+
+
+.about-img{
+    position: absolute;
+    width: 453px;
+    height: 725px;
+    left: 672.76px;
+    top: -10px;
+}
+
+.about-main{
+    position: absolute;
+    width: 1091.92px;
+    height: 715.14px;
+    left: 94.24px;
+    top: 0px;
+    z-index: 1;
+}
+
+
+.about-uppertext{
+    width: 253.85px;
+    height: 76px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 119.3%;
+    /* or 76px */
+    
+    
+    color: #FFFFFF;
+}
+
+
+.about-bottom-text{
+    width: 521.14px;
+    height: 82px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 185.99%;
+    /* or 41px */
+    
+    
+    color: #717171;
+}
+
+.about-link{
+    text-decoration: none;
+}
+
+
+
+.About{
+    position: absolute;
+    width: 1091.92px;
+    height: 715.14px;
+    left: 23%;
+    top: 1650px;
+}
+
+
+
+
+
+
+
+
+
+/* Roadmap */
+.Roadmap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    
+    position: absolute;
+    width: 1220px;
+    height: 1998.29px;
+    left: 149px;
+    top: 2554px;
+}
+
+
+
+.roadmap-title{
+    display:flex;
+    flex-direction: column ;
+    align-items: center;
+    width: 730px;
+    height: 179px;
+    position: relative;
+    left: 400px;
+}
+
+.roadmap-logo{
+    width: 422.73px;
+    height: 119px;
+}
+
+.roadmap-logo-text1{
+/* ROA */
+
+
+position: absolute;
+width: 126px;
+height: 119px;
+left: 0px;
+top: 0px;
+
+font-family: 'Turret Road';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 185.99%;
+/* identical to box height, or 119px */
+
+
+color: #FFFFFF;
+}
+
+
+.roadmap-logo-rect{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 131.98px;
+    height: 45.73px;
+    left: 130.56px;
+    top: 33.27px;
+    
+    border: 4px solid #FFFFFF;
+    border-radius: 0px 15px 0px 0px;
+}
+
+.roadmap-logo-text2{
+    position: absolute;
+    width: 147px;
+    height: 119px;
+    left: 275.73px;
+    top: 0px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 185.99%;
+    /* identical to box height, or 119px */
+    
+    
+    color: #FFFFFF;
+}
+
+.roadmap-text{
+    width: 729.57px;
+    height: 37px;;
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 185.99%;
+    /* or 37px */
+    
+    text-align: center;
+    
+    position: relative;
+    left: -150px;
+    
+    color: #DDDDDD;
+}
+
+
+.roadmap-stages{
+    width: 1200px;
+    height: 1700px;
+    position: relative;
+    top: 150px;
+    left: 250px;
+}
+
+
+.line1{
+    position: absolute;
+    width: 872.69px;
+    height: 0px;
+    left: 155px;
+    top: 470px;
+    
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg)
+}
+
+.line2{
+    position: absolute;
+    width: 1592.15px;
+    height: 0px;
+    left: -205px;
+    top: 880px;
+    
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    transform: rotate(90deg);
+}
+
+.leha-roadmap{
+    position: absolute;
+    width: 359px;
+    height: 616px;
+    left: 821.94px;
+    top: 745px;
+
+    background-image: url('imgs/lehaRoadmap.png');
+}
+
+.katya-roadmap{
+    position: absolute;
+    width: 320px;
+    height: 551px;
+    left: 152.94px;
+    top: 300px;
+    z-index: 999;
+
+    
+    background-image: url('imgs/katyaRoadmap.png');
+}
+
+.vanya-roadmap{
+
+    position: absolute;
+    width: 296px;
+    height: 534px;
+    left: 638.94px;
+    top: -97px;
+
+    background-image: url('imgs/vanyaRoadmap.png');
+}
+
+.pablo-roadmap{
+    position: absolute;
+    width: 434px;
+    height: 780px;
+    top: -150px;
+    left: 900px;
+    background-image: url('imgs/pabloRoadmap.png');
+}
+
+
+.elipse{
+    position: absolute;
+    width: 23.9px;
+    height: 23.9px;
+    left: 580.76px;
+
+    background: #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.elipses1{
+    top: 9.93px;
+}
+
+.elipses2{
+    top: 431.92px;
+}
+
+.elipses3{
+    top: 874px;
+}
+
+.stage1{
+    position: absolute;
+    width: 477.44px;
+    height: 388.29px;
+    left: 0px;
+    top: 100px;
+    z-index: 1;
+}
+
+.step1{
+    position: absolute;
+    width: 187px;
+    height: 119px;
+    left: 41.88px;
+    top: 29.4px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 185.99%;
+    /* identical to box height, or 119px */
+    
+    
+    color: #FFFFFF;
+}
+
+.stage1-openc{
+    position: absolute;
+    width: 227.23px;
+    height: 45px;
+    left: 43.08px;
+    top: 156.4px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 185.99%;
+    /* identical to box height, or 45px */
+    
+    
+    color: #FFFFFF;
+}
+
+.stage1-toptab{
+    position: absolute;
+    width: 391.27px;
+    height: 37px;
+    left: 42.94px;
+    top: 209.32px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 185.99%;
+    /* or 37px */
+    
+    
+    color: #919191;
+}
+
+.stage1-rect{
+    box-sizing: border-box;
+    position: absolute;
+    width: 477.44px;
+    height: 388.29px;
+    left: 0px;
+    top: 0px;
+    background: #0C0C0C;
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    border-radius: 16px;
+}
+
+
+
+.stage2{
+    position: absolute;
+    width: 477.44px;
+    height: 388.29px;
+    left: 664.86px;
+    top: 436.54px;
+}
+
+.step2{
+
+    position: absolute;
+    width: 208px;
+    height: 119px;
+    left: 41.88px;
+    top: 29.4px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 185.99%;
+    /* identical to box height, or 119px */
+    
+    
+    color: #FFFFFF;
+
+}
+
+.stage2-choose{
+    position: absolute;
+    width: 227.23px;
+    height: 45px;
+    left: 43.08px;
+    top: 156.4px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 185.99%;
+    /* identical to box height, or 45px */
+    
+    
+    color: #FFFFFF;
+}
+
+.stage2-sure{
+    position: absolute;
+    width: 391.27px;
+    height: 74px;
+    left: 43.08px;
+    top: 209.4px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 185.99%;
+    /* or 37px */
+    
+    
+    color: #919191;
+    
+}
+.stage2-rect{
+    box-sizing: border-box;
+
+position: absolute;
+width: 477.44px;
+height: 388.29px;
+left: 0px;
+top: 0px;
+
+background: #0C0C0C;
+border: 1px solid rgba(255, 255, 255, 0.27);
+border-radius: 16px;
+}
+
+
+.stage3{
+    position: absolute;
+    width: 477.44px;
+    height: 388.29px;
+    left: 0px;
+    top: 874px;
+}
+
+.step3{
+    position: absolute;
+    width: 201px;
+    height: 119px;
+    left: 41.88px;
+    top: 29.4px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 185.99%;
+    /* identical to box height, or 119px */
+    
+    
+    color: #FFFFFF;
+}
+
+
+.stage3-add{
+    position: absolute;
+    width: 227.23px;
+    height: 45px;
+    left: 43.08px;
+    top: 156.4px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 185.99%;
+    /* identical to box height, or 45px */
+    
+    
+    color: #FFFFFF;
+}
+
+
+.stage3-simple{
+    position: absolute;
+width: 391.27px;
+height: 37px;
+left: 43.08px;
+top: 209.4px;
+
+font-family: 'Turret Road';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 185.99%;
+/* or 37px */
+
+
+color: #919191;
+}
+
+.stage3-rect{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 477.44px;
+    height: 388.29px;
+    left: 0px;
+    top: 0px;
+    
+    background: #0C0C0C;
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    border-radius: 16px;
+}
+
+.stage4{
+    position: absolute;
+    width: 477.44px;
+    height: 388.29px;
+    left: 664.86px;
+    top: 1286px;
+}
+
+.step4{
+/* Step 4 */
+
+
+position: absolute;
+width: 199px;
+height: 119px;
+left: 41.88px;
+top: 29.4px;
+
+font-family: 'Turret Road';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 185.99%;
+/* identical to box height, or 119px */
+
+
+color: #FFFFFF;
+}
+
+.stage4-choose{
+    position: absolute;
+    width: 478px;
+    height: 45px;
+    left: 43.29px;
+    top: 156.33px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 185.99%;
+    /* identical to box height, or 45px */
+    
+    
+    color: #FFFFFF;
+}
+
+.stage4-details{
+    position: absolute;
+width: 391.27px;
+height: 74px;
+left: 43.08px;
+top: 209px;
+
+font-family: 'Turret Road';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 185.99%;
+/* or 37px */
+
+
+color: #919191;
+}
+
+.stage4-rect{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 500px;
+    height: 388.29px;
+    left: 0px;
+    top: 0px;
+    
+    background: #0C0C0C;
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    border-radius: 16px;
+}
+
+
+
+
+
+/* roadmap-end */
+
+
+
+
+
+.Join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 74px;
+    
+    position: absolute;
+    width: 1854.62px;
+    height: 1287.44px;
+    left: 60px;
+    top: 4800px;
+}
+
+
+.joinOurteam{
+    width: 405px;
+    height: 119px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 185.99%;
+    /* identical to box height, or 119px */
+    
+    
+    color: #FFFFFF;
+}
+
+.branding{
+    width: 584.5px;
+    height: 90px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 185.99%;
+    /* or 30px */
+    
+    text-align: center;
+    
+    color: #919191;
+}
+
+
+/* Footer */
+
+.Footer{
+    position: absolute;
+    width: 1920px;
+    height: 355px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.since{
+    position: absolute;
+    left: 12.5%;
+    right: 70.62%;
+    top: 83.1%;
+    bottom: 11.27%;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    
+    
+    color: #E1E9F0;
+}
+
+.footer1{
+    position: absolute;
+    left: 12.5%;
+    right: 69.24%;
+    top: 8.45%;
+    bottom: 8.45%;
+}
+
+.footerLogo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    top: 30px;
+}
+
+.supp{
+    position: absolute;
+    width: 53px;
+    height: 20px;
+    left: 0px;
+    bottom: 42px;
+    
+    /* Text/Small text */
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+    
+    
+    color: #FFFFFF;
+    
+    
+}
+
+
+.term{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    left: 83px;
+    bottom: 42px;
+    
+    /* Text/Small text */
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+    
+    
+    color: #FFFFFF;
+}
+
+.licence{
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    left: 213px;
+    bottom: 42px;
+    
+    /* Text/Small text */
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+    
+    
+    color: #FFFFFF;
+}
+
+
+.footer2{
+    position: absolute;
+    left: 35.42%;
+    right: 42.22%;
+    top: 8.73%;
+    bottom: 8.73%;
+}
+
+.divider{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1px;
+    left: 0px;
+    top: 0%;
+    bottom: 0%;
+    
+    opacity: 0.35;
+    border: 1px solid #8298AB;
+}
+
+.firstLink{
+    position: absolute;
+    height: 25px;
+    left: 9.32%;
+    right: 39.44%;
+    top: 29px;
+    
+    /* Text/Medium text */
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    /* identical to box height, or 147% */
+    
+    
+    color: #E1E9F0;
+}
+
+
+.secondLink{
+    position: absolute;
+    height: 25px;
+    left: 9.32%;
+    right: 39.44%;
+    top: 64px;
+    
+    /* Text/Medium text */
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    /* identical to box height, or 147% */
+    
+    
+    color: #E1E9F0;
+}
+
+
+.footerfacebook{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 30px;
+    bottom: 39px;
+}
+
+.footerInstagram{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 112px;
+    bottom: 39px;
+}
+
+.footerTwitter{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 70px;
+    bottom: 39px;
+}
+
+
+
+
+.footer3{
+    position: absolute;
+    left: 59.86%;
+    right: 12.5%;
+    top: 8.45%;
+    bottom: 8.45%;
+}
+
+.impression{
+    position: absolute;
+    height: 25px;
+    left: 0%;
+    right: 7.54%;
+    top: 30px;
+    
+    /* Text/Medium text */
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    /* identical to box height, or 147% */
+    
+    
+    color: #E1E9F0;
+}
+
+.idb{
+    position: absolute;
+    height: 17px;
+    left: 1.26%;
+    right: 6.28%;
+    top: 265px;
+    
+    /* Text/Medium text */
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    /* or 147% */
+    
+    
+    color: #E1E9F0;
+}
+
+
+.footer-form3{
+    position: absolute;
+    height: 45px;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+}
+
+.divider2{
+    left: 325px;
+}
+
+
+.footer-rect1{
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 10.42%;
+    right: 10.42%;
+    top: 8.45%;
+    bottom: 8.45%;
+    
+    opacity: 0.35;
+    /* Light grey */
+    
+    border: 1px solid #8298AB;
+}
+
+.footer-rect2{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    background: #070707;
+}
+
+
+/* slider */
+.Slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 74px;
+    
+    position: absolute;
+    width: 1854.62px;
+    height: 1287.44px;
+    left: 0px;
+    top: 5200.68px;
+}
+.slider-cont{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1500px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.item1{
+    margin-top: 80px;
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .item2{
+    margin-top: 57px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .item3{
+    margin-top: 30px;
+  
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  .item4{
+    margin-top: 3px;
+  
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+  .item5{
+    margin-top: -24px;
+  
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+  }
+  .item6{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+  }
+  
+  .item7{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 6;
+    flex-grow: 0;
+  }
+  .item8{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 7;
+    flex-grow: 0;
+  }
+  .item9{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 8;
+    flex-grow: 0;
+  }
+
+  .item10{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 9;
+    flex-grow: 0;
+  }
+  
+  
+  .slider-item{
+    margin-left: 50px;
+    transform: rotate(-7.03deg);
+  }
+  
+  .butt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 60px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+  }
+
+  .slider-cont1{
+    margin-bottom: 200px;
+  }
+
+  .arrow{
+    width: 100px;
+    height: 50px;
+  }
+
+  .item-1-1{
+    margin-top: 80px;
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  
+  .item-1-2{
+    margin-top: 57px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .item-1-3{
+    margin-top: 30px;
+  
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  .item-1-4{
+    margin-top: 3px;
+  
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+  .item-1-5{
+    margin-top: -24px;
+  
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+  }
+  .item-1-6{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+  }
+  
+  .item-1-7{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 6;
+    flex-grow: 0;
+  }
+  .item-1-8{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 7;
+    flex-grow: 0;
+  }
+  .item-1-9{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 8;
+    flex-grow: 0;
+  }
+
+  .item-1-10{
+    margin-top: 200px;
+  
+    flex: none;
+    order: 9;
+    flex-grow: 0;
+  }
+
+  .slider-item1{
+    margin-left: 50px;
+    transform: rotate(-7.03deg);
+  }
+/* catalog */
+
+.search-form{
+    display: inline-flex;
+    
+}
+
+.search-input{
+    position: absolute;
+    width: 879px;
+    height: 38px;
+    left: 144px;
+    top: 161px;
+    padding: 0 20px;
+    font-size: 30px;
+
+    
+    background: #D9D9D9;
+    border-radius: 40px;
+
+    border: none;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 11px 26px;
+    gap: 21px;
+    
+    position: absolute;
+    width: 121px;
+    height: 46px;
+    left: 1400px;
+    top: 130px;
+    
+    background: #151313;
+    border-radius: 8px;
+}
+
+.filters-text{
+    width: 69px;
+    height: 24px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 119.3%;
+    /* identical to box height, or 24px */
+    
+    
+    color: #FFFFFF;
+}
+
+
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+
+    position: absolute;
+    width: 315px;
+    height: 309px;
+    left: 1400px;
+    top: 199px;
+    background: #D9D9D9;
+    border-radius: 35px;
+}
+
+
+.size{
+    width: 70px;
+    height: 24px;
+
+    font-family: 'Turret Road';
+    font-style:normal;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+}
+
+.sizes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 127px;
+    height: 30px;
+
+    font-family: 'Turret Road';
+    font-style:normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.s-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px 2px 2px 2px;
+    width: 30px;
+    height: 30px; 
+}
+
+.s-name:hover{
+    background: #e4dff5;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+.size-in-letters-checked{
+    background: #fff;
+    border-radius: 100px;
+    border: 1px #000000 solid;
+    
+}
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    height: 150px;
+
+    margin: 10px;
+    padding: 0 20px;
+}
+
+.checkbox-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 150px;
+    height: 24px;
+}
+
+.checkbox{
+    background: #F6F8F9;
+    /* Mid Gray / Mid Gray 5 */
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid #B0BABF;
+    border-radius: 4px;
+
+}
+
+.checkbox-label{
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+.Item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    height: 330px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #0C0C0C;
+  }
+  
+  .item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .item-text {
+    padding: 10px;
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+    
+  }
+  
+  .Item:hover {
+    background-color: #111;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    cursor: pointer;
+
+    transform: scale(1.05);
+    transition: 0.4s;
+  }
+  
+  .Item:hover .item-text {
+    color: #F5F5F5;
+  }
+
+
+
+
+.cat-gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 70px;
+    position: absolute;
+    height: 5568px;
+    width: 1191px;
+    left: 170px;
+    top: 302px;
+}
+
+
+
+
+
+.cat-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 70px;
+    
+    width: 1191px;
+    height: 1057.63px;
+}
+
+
+.cat-main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    
+    width: 701px;
+    height: 167px;
+}
+
+.cat-main-text{
+    width: 800px;
+    height: 119px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 185.99%;
+    /* identical to box height, or 119px */
+    
+    
+    color: #FFFFFF;
+}
+
+
+.cat-main-bottom-text{
+    width: 701px;
+    height: 46px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 185.99%;
+    /* or 46px */
+    
+    
+    color: #919191;
+}
+
+.cat-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 56px;
+    
+    width: 1191px;
+    height: 820.63px;
+}
+
+.cat-main-container1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 37px;
+    
+    width: 1191px;
+    height: 325.81px;
+}
+
+
+.Not-Found{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 1920px;
+    height: 100vh;
+}
+
+
+.notFound-404{
+    width: 100px;
+    height: 46px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+
+    margin-top: 100px;
+}
+
+.notFound-text{
+    width: 300px;
+    height: 46px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.button-404{
+    width: 300px;
+    height: 70px;
+    font-size: 30px;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+.Basket{
+    position: relative;
+    width: 1440px;
+    height: 1493px;
+    
+    background: #000000;
+}
+
+.basket-main{
+    position: absolute;
+    width: 422px;
+    height: 89px;
+    left: 113px;
+    top: 145px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 119.3%;
+    /* or 89px */
+    
+    
+    color: #FFFFFF;
+}
+
+.basket-container{
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    left: 113px;
+    top: 267px;
+    width: 700px;
+    height: 780px;
+    overflow: auto;
+}
+
+
+
+.BasketItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 20px;
+    width: 600px;
+    height: 240px;
+
+    border: 1px solid #494949;
+}
+
+.BasketItem-frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 221px;
+    height: 235px;
+
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #0C0C0C;
+}
+
+.BasketItem-img{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.BasketItem-name{
+    padding: 10px;
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.BasketItem-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 209px;
+    height: 100px;
+}
+
+.BasketItem-price{
+    width: 209px;
+    height: 41px;
+
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+    width: thin;
+    background-color: #f5f5f5;
+
+    border-radius: 15px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
+    border: 2px solid #f5f5f5;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+  }
+
+
+  .total{
+
+    position: absolute;
+    width: 111px;
+    height: 20px;
+    left: 224px;
+    top: 1081px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 20px;
+    /* identical to box height, or 56% */
+    
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    
+    color: #FFFFFF;
+  }
+.adress{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    left: 900px;
+    top: 100px;
+}
+
+.adress-text{
+    width: 800px;
+    height: 100px;
+
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 20px;
+    /* identical to box height, or 56% */
+
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+
+    color: #FFFFFF;
+
+  }
+
+
+  .MyMap{
+    position: absolute;
+
+    left: 900px;
+    top: 300px;
+  }
+
+  .payment-text{
+    position: absolute;
+    width: 370px;
+    height: 40px;
+    left: 850px;
+    top: 800px;
+    
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 20px;
+    /* or 56% */
+    
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    
+    color: #FFFFFF;  
+  }
+
+
+  .payment-methods{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 850px;
+    top: 830px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 150%;
+    /* or 52px */
+    
+    letter-spacing: -0.022em;
+    
+    color: #FFFFFF;
+  }
+
+  .pay{
+    width: 405px;
+    height: 50px;
+  }
