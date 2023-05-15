@@ -3,6 +3,7 @@ import Main from './pages/Main';
 import Catalog from './pages/Catalog'
 import NotFound from './pages/NotFound';
 import Basket from './pages/Basket';
+import Login from './pages/Login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Reviews from './pages/Reviews';
 
@@ -15,6 +16,7 @@ function App() {
           <Route path='/catalog' element={<Catalog/>}/>
           <Route path='/basket' element={<Basket/>}/>
           <Route path='/reviews' element={<Reviews/>}/>
+          <Route path='/login' element={<Login/>}/>
           <Route path='*' element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>  
