@@ -1,5 +1,5 @@
 import React from "react";
-
+import cancel from "../imgs/pngwing.com.png"
 
 function BasketItem({name, Basketimage, price}){
    return( 
@@ -10,6 +10,7 @@ function BasketItem({name, Basketimage, price}){
             <div className="BasketItem-name">{name}</div>
         </div>
         <div className="BasketItem-info">
+            <img className="delete-button" src={cancel} alt="delete" />
             <div className="BasketItem-price">Price: {price} $</div>
         </div>
         

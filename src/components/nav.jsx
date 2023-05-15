@@ -28,7 +28,7 @@ return(
             <NavLink to="/" activeClassName="checked"><div onClick={ButtonClicked} className="nav-button about checked">About</div></NavLink>
             <NavLink to={"/catalog"}><div onClick={ButtonClicked}  className="nav-button catalog">Catalog</div></NavLink>
             <NavLink to={"/"}><div onClick={ButtonClicked} className="nav-button roadmap ">Favorites</div></NavLink>
-            <NavLink to={"/"}><div onClick={ButtonClicked} className="nav-button minting ">Reviews</div></NavLink>
+            <NavLink to={"/reviews"}><div onClick={ButtonClicked} className="nav-button minting ">Reviews</div></NavLink>
             
         </div>
         

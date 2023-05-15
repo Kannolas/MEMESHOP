@@ -6,9 +6,16 @@ import sreda from "../imgs/sreda.png"
 import MyMap from "../components/MyMap";
 
 function Basket(){
+    function BasketLoaded(){
+        let a = document.querySelectorAll(".nav-button")
+        a.forEach(element => {
+                element.classList.remove("checked");
+        })
+    }
+
     return(
 
-    <div className="Basket">
+    <div className="Basket" onLoad={BasketLoaded}>
         <Nav/>
         <div className="basket-main">BASKET</div>
         <div className="basket-container">
@@ -18,7 +25,7 @@ function Basket(){
             <BasketItem  name={"sreda"} Basketimage={sreda} price ="50"/>
         </div>
 
-        <div className="total">TOTAL: </div>
+        <div className="total">TOTAL: 5000$</div>
 
         <div className="adress">
             <div className="adress-text1 adress-text">ADRESS</div>
@@ -37,6 +44,11 @@ function Basket(){
             <div className="cardtocourier pay">&#9679; by card to the courier</div>
             <div className="bypoints pay">&#9679; by points</div>
         </div>
+
+        <div className="basket-order">
+            <div className="basket-order-text">Order</div>
+        </div>
+
     </div>
     )
 }
