@@ -3,9 +3,12 @@ import { useState } from "react";
 import Nav from "../components/nav";
 import Footer from "../components/Footer"
 import show from "../imgs/icons8-show-100.png"
+import PhoneInput from "../components/PhoneInput";
+import DateInput from "../components/DateInput";
 
 function Registration(){
     const [isPassShowed, setPassShowed] = useState(false)
+
     return(
         <div className="Registration">
             <Nav/>
@@ -29,17 +32,14 @@ function Registration(){
                     <input type="text" name="reg-name" id="reg-name" className="outlined" required/>
                     <label className="outlined-placeholder" htmlFor="name">Name</label>
                 </div>
-                <div className="text-field reg-age">
-                    <input type="date" name="reg-age" id="reg-age" className="outlined" min="1900-01-01" max="2023-05-16" required/>
-                    <label className="outlined-placeholder" htmlFor="reg-age">Date of birth</label>
-                </div>
+                <DateInput/>
                 <div className="text-field reg-adress">
                     <input type="text" name="reg-adress" id="reg-adress" className="outlined" required/>
                     <label className="outlined-placeholder" htmlFor="reg-adress">Adress</label>
                 </div>
                 <div className="text-field reg-phone">
-                    <input type="tel" name="reg-phone" id="reg-phone" className="outlined" required/>
-                    <label className="outlined-placeholder" htmlFor="reg-phone">Phone number</label>
+                    <PhoneInput/>
+                    <label className="outlined-placeholder" htmlFor="reg-phone">Phone nubmer</label>
                 </div>
 
             </div>
