@@ -1,8 +1,14 @@
 import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Nav from "../components/nav";
 import Footer from "../components/Footer";
+import show from "../imgs/icons8-show-100.png"
 
 function Login(){
+    const [isPassShowed, setPassShowed] = useState(false)
+
+
     return(
         <div className="Login">
             <Nav/>
@@ -10,21 +16,29 @@ function Login(){
 
             <div className="login-container">
                 <div className="text-field login-username">
-                    <input type="text" name="username" id="username" className="outlined"/>
+                    <input type="text" name="username" id="username" className="outlined" required/>
                     <label className="outlined-placeholder" htmlFor="Username">Username</label>
                 </div>
                 <div className="text-field login-password">
-                    <input type="text" name="password" id="password" className="outlined"/>
+                    <input type={isPassShowed?"text":"password"} name="password" id="password" className="outlined" required/>
                     <label className="outlined-placeholder" htmlFor="password">Password</label>
+                    <img src={show} alt="Show password" className="show-pass" onClick={()=>{setPassShowed(!isPassShowed)}}/>
                 </div>
-                
-                
-                
             </div>
 
-            <div className="donthaveacc">Don't have an account?</div>
-            <div className="button-submit button-login">Log in</div>
-            <div className="memeshop">MEMESHOP</div>
+            <Link to={"/registration"}><div className="donthaveacc">Don't have an account?</div></Link>
+            <div className="button-submit button-login">
+                <div className="button-submit-text">Log in</div>
+            </div>
+            <div className="bottom-logo">
+                <div className="memeshop">MEMESHOP</div>
+                <img src="../imgs/dot.svg" alt="" className="bottom-logo-dot" />
+                <div className="memeshop">MEMESHOP</div>
+                <img src="../imgs/dot.svg" alt="" className="bottom-logo-dot" />
+                <div className="memeshop">MEMESHOP</div>
+                <img src="../imgs/dot.svg" alt="" className="bottom-logo-dot" />
+                <div className="memeshop">MEMESHOP</div>
+            </div>
             <Footer/>
         </div>
     )
