@@ -9,7 +9,7 @@ function Item({name, itemImage}){
             <div className="item-rect"></div>
             <img src={itemImage} alt="" className="item-img" />
             <div className="item-text">{name}</div>
-            <Modal isActive = {isModalActive} setActive ={setModalActive} price ={50} />
+            <Modal isActive = {isModalActive} setActive ={setModalActive} price ={50} img = {itemImage} name={name}/>
         </div>
     )
 }
