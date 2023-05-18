@@ -19,8 +19,8 @@ function Modal({isActive, setActive, price, img, name}){
                         <div className="modal-price">Price: {price}$</div>
                         <div className="to-card">To card</div>
                     </div>
-                    <div className="line line1"></div>
-                    <div className="line line2"></div>
+                    <div className="line line1-1"></div>
+                    <div className="line line2-2"></div>
                     <div className="line line3"></div>
                     <div className="line line4"></div>
                     <div className="line line5"></div>

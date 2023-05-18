@@ -2680,14 +2680,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: 5px solid #000000;
   }
 
-  .line1{
+  .line1-1{
     left: -340px;
     top: 240px;
+    transform: rotate(90deg);
   }
 
-  .line2{
+  .line2-2{
     left: -300px;
-    top: 240px; 
+    top: 240px;
+    transform: rotate(90deg); 
   }
 
   .line3{
