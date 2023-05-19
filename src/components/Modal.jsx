@@ -15,7 +15,7 @@ function Modal({isActive, setActive, price, img, name}){
     return(
         <ModalPortal children={
                 <div className={"modal-frame"} onClick={(e)=>e.stopPropagation()}>
-                    <FavoriteIcon sx={{marginLeft: '630px', marginTop: '100px', alignSelf: 'flex-end', zIndex:'999999', position:'absolute', fontSize:'3rem' }} className={`like-button ${isLiked ? 'liked' : ''}`} onClick={handleFavClick}/>
+                    <FavoriteIcon sx={{marginLeft: '67%', marginTop: '5%', alignSelf: 'flex-end', zIndex:'999999', position:'absolute', fontSize:'3rem' }} className={`like-button ${isLiked ? 'liked' : ''}`} onClick={handleFavClick}/>
                     <div className="modal-content">
                         <div className="modal-item">
                             <div className="modal-item-rect"></div>

@@ -8,6 +8,7 @@
 body{
     margin: 0px;
     background: #000000;
+    overflow-x: hidden;
     
 }
 a{
@@ -19,12 +20,12 @@ a{
 }
 
 .main{
-    width: 1920px;
+    width: 100vw;
     height: 6727px;
 }
 .Catalog{
     position: relative;
-    width: 1920px;
+    width: 100vw;
     height: 6200px;
     
     background: #000000;
@@ -45,7 +46,7 @@ transform: rotate(-54.75deg);
     position: absolute;
     width: 82.19px;
     height: 73.45px;
-    left: 1375.97px;
+    left: 1175.97px;
     top: 222.42px;
     transform: rotate(-16.45deg);
 }
@@ -66,7 +67,7 @@ transform: rotate(-54.75deg);
     align-items: center;
     z-index: 10;
     position: fixed;
-    width: 1920px;
+    width: 100vw;
     height: 70px;
     margin: 0 0 0 0;
 }
@@ -77,7 +78,7 @@ flex-direction: row;
 align-items: center;
 justify-content: space-between;
 padding: 0%;
-width: 1400px;
+width: 90%;
 height: 48px;
 }
 
@@ -166,7 +167,7 @@ flex-direction: row ;
 align-items: flex-start;
 position: absolute;
 margin-top: 70px;
-width: 1920px;
+width: 100vw;
 height: 350px;
 }
 
@@ -179,7 +180,7 @@ height: 350px;
     position: absolute;
     width: 976px;
     height: 300px;
-    left: 500px;
+    left: 25%;
     top: 246px;
 }
 
@@ -298,9 +299,9 @@ height: 350px;
 /* picture  */
 .picture{
     position: absolute;
-    width: 1286.52px;
+    width: 70%;
     height: 1616.19px;
-    left: 400px;
+    left: 10%;
     top: 723px;
 }
 
@@ -337,10 +338,11 @@ height: 350px;
 
 .group1{
     position: absolute;
-    width: 1286.52px;
+    width: 100%;
     height: 1286.52px;
-    left: -0.63px;
+    left: 70px;
     top: 230.99px;
+    top: -0px;
     
     opacity: 0.5;
 }
@@ -354,7 +356,7 @@ height: 350px;
     padding: 75px 280px;
 
     position: absolute;
-    width: 1920px;
+    width: 100vw;
     height: 400px;
     left: 0px;
     top:1302px;
@@ -381,9 +383,9 @@ height: 350px;
     box-sizing: border-box;
 
     position: absolute;
-    width: 1191.23px;
+    width: 90%;
     height: 596.81px;
-    left: 0px;
+    left: -100px;
     top: 118.33px;
     
     background: rgba(29, 29, 29, 0.33);
@@ -402,7 +404,7 @@ height: 350px;
     position: absolute;
     width: 521.14px;
     height: 298px;
-    left: 0px;
+    left: -100px;
     top: 198.14px;
 }
 
@@ -413,6 +415,7 @@ height: 350px;
     height: 725px;
     left: 672.76px;
     top: -10px;
+    left: 400px;
 }
 
 .about-main{
@@ -487,9 +490,9 @@ height: 350px;
   
     
     position: absolute;
-    width: 1220px;
+    width: 70%;
     height: 1998.29px;
-    left: 149px;
+    left: -100px;
     top: 2554px;
 }
 
@@ -651,7 +654,7 @@ color: #FFFFFF;
     width: 434px;
     height: 780px;
     top: -150px;
-    left: 900px;
+    left: 800px;
     background-image: url('imgs/pabloRoadmap.png');
 }
 
@@ -1009,9 +1012,9 @@ color: #919191;
     gap: 74px;
     
     position: absolute;
-    width: 1854.62px;
+    width: 100vw;
     height: 1287.44px;
-    left: 60px;
+    /* left: 60px; */
     top: 4800px;
 }
 
@@ -1052,7 +1055,7 @@ color: #919191;
 
 .Footer{
     position: absolute;
-    width: 1920px;
+    width: 100vw;
     height: 355px;
     left: 0px;
     bottom: 0px;
@@ -1343,9 +1346,9 @@ color: #919191;
     gap: 74px;
     
     position: absolute;
-    width: 1854.62px;
+    width: 100vw;
     height: 1287.44px;
-    left: 0px;
+    left: -100px;
     top: 5200.68px;
 }
 .slider-cont{
@@ -1353,7 +1356,7 @@ color: #919191;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1500px;
+    width: 80%;
     height: 600px;
     overflow: hidden;
 }
@@ -1574,7 +1577,7 @@ color: #919191;
     position: absolute;
     width: 121px;
     height: 46px;
-    left: 1400px;
+    left: 80%;
     top: 130px;
     
     background: #151313;
@@ -1607,7 +1610,7 @@ color: #919191;
     position: absolute;
     width: 315px;
     height: 309px;
-    left: 1400px;
+    left: 70%;
     top: 199px;
     background: #D9D9D9;
     border-radius: 35px;
@@ -1756,8 +1759,8 @@ color: #919191;
     gap: 70px;
     position: absolute;
     height: 5568px;
-    width: 1191px;
-    left: 170px;
+    width: 80%;
+    left: 100px;
     top: 302px;
 }
 
@@ -1772,7 +1775,7 @@ color: #919191;
     padding: 0px;
     gap: 70px;
     
-    width: 1191px;
+    width: 80%;
     height: 1057.63px;
 }
 
@@ -1893,7 +1896,7 @@ color: #919191;
 
 .Basket{
     position: relative;
-    width: 1440px;
+    width: 100vw;
     height: 1493px;
     
     background: #000000;
@@ -1903,7 +1906,7 @@ color: #919191;
     position: absolute;
     width: 422px;
     height: 89px;
-    left: 113px;
+    left: 5%;
     top: 145px;
     
     font-family: 'Turret Road';
@@ -1922,7 +1925,7 @@ color: #919191;
     flex-direction: column;
 
     position: absolute;
-    left: 113px;
+    left: 5%;
     top: 267px;
     width: 700px;
     height: 780px;
@@ -2043,7 +2046,7 @@ color: #919191;
     align-items: flex-start;
 
     position: absolute;
-    left: 900px;
+    left: 55%;
     top: 100px;
 }
 
@@ -2070,7 +2073,7 @@ color: #919191;
   .MyMap{
     position: absolute;
 
-    left: 900px;
+    left: 55%;
     top: 300px;
   }
 
@@ -2078,7 +2081,7 @@ color: #919191;
     position: absolute;
     width: 370px;
     height: 40px;
-    left: 850px;
+    left: 55%;
     top: 800px;
     
     font-family: 'Turret Road';
@@ -2100,7 +2103,7 @@ color: #919191;
     position: absolute;
     width: 600px;
     height: 300px;
-    left: 850px;
+    left: 55%;
     top: 830px;
 
     display: flex;
@@ -2134,7 +2137,7 @@ gap: 21px;
 position: absolute;
 width: 206px;
 height: 73px;
-left: 1465px;
+left: 83%;
 top: 1025px;
 
 background: #FFFFFF;
@@ -2180,7 +2183,7 @@ color: #000000;
 
 .Reviews{
     position: relative;
-    width: 1440px;
+    width: 100vw;
     height: 2000px;
     
     background: #000000;
@@ -2191,7 +2194,7 @@ color: #000000;
     position: absolute;
     width: 452px;
     height: 89px;
-    left: 50%;
+    left: 40%;
     top: 100px;
     
     font-family: 'Zen Dots';
@@ -2213,8 +2216,8 @@ color: #000000;
 
     position: absolute;
     height: 1156px;
-    width: 1300px;
-    left: 25%;
+    width: 80%;
+    left: 15%;
     top: 200px;
     overflow: auto;
 }
@@ -2295,7 +2298,7 @@ color: #000000;
     gap: 10px;
     
     position: absolute;
-    width: 1920px;
+    width: 100vw;
     height: 124px;
     left: 0px;
     bottom: 335px;
@@ -2334,7 +2337,7 @@ color: #000000;
 
 .Login{
     position: relative;
-    width: 1440px;
+    width: 100vw;
     height: 1168px;
     
     background: #000000;
@@ -2344,7 +2347,7 @@ color: #000000;
     position: absolute;
     width: 762.06px;
     height: 89px;
-    left: 40%;
+    left: 30%;
     top: 186px;
     
     font-family: 'Zen Dots';
@@ -2366,9 +2369,9 @@ color: #000000;
     justify-content: space-between;
 
     position: absolute;
-    width: 670px;
+    width: 30%;
     height: 117px;
-    left: 43%;
+    left: 40%;
     top: 354px  ;
 }
 
@@ -2438,7 +2441,7 @@ color: #000000;
 .donthaveacc{
     position: absolute;
     width: 300px;
-    left: 850px;
+    left: 50%;
     top: 513px;
     
     font-family: 'Lato';
@@ -2461,7 +2464,7 @@ color: #000000;
     position: absolute;
     width: 130px;
     height: 60px;
-    left: 1150px;
+    left: 70%;
     top: 500px;
     transition: .3s;
     background: #FFFFFF;
@@ -2493,7 +2496,7 @@ color: #000000;
 
 .Registration{
     position: relative;
-    width: 1440px;
+    width: 100vw;
     height: 1568px;
     
     background: #000000;
@@ -2508,7 +2511,7 @@ color: #000000;
     position: absolute;
     width: 670px;
     height: 490px;
-    left: 43%;
+    left: 33%;
     top: 354px  ;
 }
 
@@ -2568,7 +2571,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .modal-frame{
     position: relative;
     width: 50%;
-    height: 70%;
+    height: 80%;
     overflow: hidden;
     background: #FFFFFF;
     border: 10px solid #646464;
@@ -2580,8 +2583,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
     width: 575px;
     height: 637px;
   }
@@ -2593,8 +2595,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10%;
-    margin-left: 20vw;
+    margin-top: -5%;
+    margin-left: 15vw;
     width: 20vw;
     height: 40vh;
     
@@ -2644,7 +2646,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 20px;
     text-align: center;
     padding: 25px;
-    margin-left: 400px;
+    margin-left: 40%;
     font-family: 'Turret Road';
     font-style: normal;
     font-weight: 700;
@@ -2658,7 +2660,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 66px;
     background-color: #000000;
     border-radius: 15px;
-    margin-left: 400px;
+    margin-left: 40%;
+    margin-top: -5%;
     text-align: center;
     padding: 15px;
     font-family: 'Turret Road';
@@ -2733,3 +2736,62 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .like-button.liked{
     fill: #e53935; /* Установка красного цвета */
   }
+
+
+
+
+  .InfoSample{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 4400px;
+    background-color: #000000;
+  }
+
+
+  .main-info{
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000000;
+  }
+
+
+  .main-info-text{
+    width: 600px;
+    height: 80px;
+
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    color: #FFF;
+  }
+
+
+  .text-info{
+    width: 100vw;
+    height: 3450px;
+
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+.text-info-text{
+    width: 1000px;
+    height: 3000px;
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFF;    
+}

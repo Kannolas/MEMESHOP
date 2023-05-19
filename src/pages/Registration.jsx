@@ -5,6 +5,8 @@ import Footer from "../components/Footer"
 import show from "../imgs/icons8-show-100.png"
 import PhoneInput from "../components/PhoneInput";
 import DateInput from "../components/DateInput";
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 function Registration(){
     const [isPassShowed, setPassShowed] = useState(false)
@@ -22,7 +24,7 @@ function Registration(){
                 <div className="text-field reg-password">
                     <input type={isPassShowed?"text":"password"} name="reg-password" id="reg-password" className="outlined" required/>
                     <label className="outlined-placeholder" htmlFor="reg-password">Password</label>
-                    <img src={show} alt="Show password" className="show-pass" onClick={()=>{setPassShowed(!isPassShowed)}}/>
+                    {isPassShowed? <VisibilityIcon sx={{fontSize: '2.5rem'}} className="show-pass" onClick={()=>{setPassShowed(!isPassShowed)}}/> : <VisibilityOffIcon sx={{fontSize: '2.5rem'}} className="show-pass" onClick={()=>{setPassShowed(!isPassShowed)}}/>}
                 </div>
                 <div className="text-field reg-repeat-password">
                     <input type={isPassShowed?"text":"password"} name="reg-repeat-password" id="reg-repeat-password" className="outlined" required/>

@@ -9,9 +9,9 @@ function Footer(){
             <div className="since">Since 2023</div>
             <div className="footer1">
                 <img src="footerLogo" alt="" className="logo" />
-                <Link to={"/"}><div className="supp">Support</div></Link>
-                <Link to={"/"}><div className="term">Term of service</div></Link>
-                <Link to={"/"}><div className="licence">License</div></Link>
+                {/* <Link to={"/"}><div className="supp">Support</div></Link> */}
+                <Link to={"/TermsOfService"}><div className="term">Term of service</div></Link>
+                <Link to={"/License"}><div className="licence">License</div></Link>
             </div>
             <div className="footer2">
                 <div className="divider divider1"></div>

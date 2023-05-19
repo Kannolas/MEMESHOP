@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Nav from "../components/nav";
 import Footer from "../components/Footer";
 import show from "../imgs/icons8-show-100.png"
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 function Login(){
     const [isPassShowed, setPassShowed] = useState(false)
@@ -22,7 +24,7 @@ function Login(){
                 <div className="text-field login-password">
                     <input type={isPassShowed?"text":"password"} name="password" id="password" className="outlined" required/>
                     <label className="outlined-placeholder" htmlFor="password">Password</label>
-                    <img src={show} alt="Show password" className="show-pass" onClick={()=>{setPassShowed(!isPassShowed)}}/>
+                    {isPassShowed? <VisibilityIcon sx={{fontSize: '2.5rem'}} className="show-pass" onClick={()=>{setPassShowed(!isPassShowed)}}/> : <VisibilityOffIcon sx={{fontSize: '2.5rem'}} className="show-pass" onClick={()=>{setPassShowed(!isPassShowed)}}/>}
                 </div>
             </div>
 
