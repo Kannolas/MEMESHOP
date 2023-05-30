@@ -1,8 +1,19 @@
 import React from "react"; 
 import Item from "./Item";
 import sreda from "../imgs/sreda.png"
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 function Slider() {
+  const [production, setProduction] = useState([]);
+  useEffect(()=>{
+    axios.get("https://localhost:7017/api/Products/4").then(response =>{
+      setProduction(production)
+      console.log(production)
+    }).catch(error =>{
+      console.log(error)
+    })
+  }, [])
   function MoveSlider() {
     const elems = document.querySelectorAll('.slider-item');
     const elems1 = document.querySelectorAll('.slider-item1');

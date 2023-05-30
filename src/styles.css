@@ -2795,3 +2795,48 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 30px;
     color: #FFF;    
 }
+
+
+
+.Profile{
+    width: 100vw;
+    height: 1000px;
+}
+
+.profile-img{
+    position: absolute;
+    width: 280px;
+    height: 289px;
+    left: 74px;
+    top: 100px;
+}
+
+
+.profile-info{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    left: 600px;
+    top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+}
+
+
+.button-log-out-text{
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: #000000;
+}

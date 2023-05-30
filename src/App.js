@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Reviews from './pages/Reviews';
 import Terms from './pages/Terms';
 import Licence from './components/Licence';
+import Profile from './pages/Profile'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/reviews' element={<Reviews/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/registration' element={<Registration/>}/>
+          <Route path='/Profile' element={<Profile/>}/>
           <Route path='/TermsOfService' element={<Terms/>}/>
           <Route path='/License' element={<Licence/>}/>
           <Route path='*' element={<NotFound/>}/>

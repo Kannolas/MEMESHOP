@@ -8,7 +8,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
 const Nav = function(){
-
+const isAuth = (localStorage.getItem("isAuth")==1);
 const ButtonClicked = function(e){
     let a = [document.querySelector(".about"), document.querySelector(".roadmap"), document.querySelector(".minting"), document.querySelector(".catalog")]
     a.forEach(element => {
@@ -51,8 +51,8 @@ return(
         
 
         <div className="nav-buttons2">
-            <NavLink to={"/login"}><AccountBoxIcon sx={{fontSize:'3.5rem', color: '#fff', marginTop: '-5px'}}/></NavLink>
-            <NavLink to={"/basket"}>
+            <NavLink to={isAuth?"/Profile":"/login"}><AccountBoxIcon sx={{fontSize:'3.5rem', color: '#fff', marginTop: '-5px'}}/></NavLink>
+            <NavLink to={isAuth?"/basket":'/login'}>
                 <WhiteIconButton aria-label="cart">
                     <StyledBadge badgeContent={4} color="secondary">
                         <ShoppingCartIcon/>
